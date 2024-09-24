@@ -1,0 +1,201 @@
+/* body {
+  background-color: hsl(249, 37%, 96%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: hsl(241, 91%, 45%);
+}
+
+p {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+} */
+
+.aboutTitle {
+  margin-left: 2.5rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.introBio {
+  /* display: flex; */
+  align-items: center;
+  max-width: 35%;
+  font-weight: 800;
+  left: 2.5rem;
+  margin-left: 2.66rem;
+}
+
+.hr {
+  position: relative;
+  /* transform: rotate(90deg); */
+  /* border-color: hsl(241, 91%, 45%); */
+  width: 150%;
+}
+
+.links {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: flex-end;
+  margin-left: 12.5rem;
+  width: 20rem;
+  display: block;
+}
+
+.icon {
+  width: 2rem;
+  transition: all 0.4s;
+  color: hsl(241, 91%, 45%);
+  transform-origin: center;
+
+  /* :hover {
+    opacity: 0.4;
+  } */
+}
+
+.introText {
+  max-width: 50%;
+  position: relative;
+  left: 2.5rem;
+  top: 1rem;
+}
+
+.aligned {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 2rem 2rem;
+  cursor: pointer;
+  position: relative;
+  left: 0.5rem;
+}
+
+.resume h3 {
+  position: relative;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.resume h3:hover {
+  transform: translateX(2.5rem);
+}
+
+.resume a {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  font-weight: 800;
+  text-decoration: none;
+}
+.resume a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.05em;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.resume a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.down-arrow {
+  width: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 400;
+}
+
+.resumeTitle {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 0px;
+}
+
+.marcos {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 0;
+  right: 0;
+}
+
+.marcosImg {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 0 5rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .marcosImg {
+    width: 27.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .introContainer {
+    position: relative;
+    margin-top: 100%;
+  }
+
+  .introBio,
+  .introText {
+    max-width: 75%;
+  }
+
+  .hr {
+    max-width: 100%;
+  }
+
+  .marcos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .marcosImg {
+    height: auto;
+    width: 90%;
+    left: 0;
+    top: 5rem;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    border-radius: 1rem;
+  }
+}
