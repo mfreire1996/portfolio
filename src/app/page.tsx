@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,12 +8,15 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { motion, useAnimate } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
 import useSWR from "swr";
-// import { NextSeo } from "next-seo";
+
+export const metadata: Metadata = {
+  title: "Marcos Freire Portfolio",
+  description: "Powered by Next.js",
+};
 
 export default function Home() {
-  const [pageTransition] = useState(false);
+  // const [pageTransition] = useState(false);
 
   return (
     <main>
