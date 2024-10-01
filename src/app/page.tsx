@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   description: "Powered by Next.js",
 };
 
+export default function Home() {
+  // const [pageTransition] = useState(false);
+
   return (
     <main>
       <Head>
